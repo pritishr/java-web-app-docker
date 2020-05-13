@@ -30,11 +30,11 @@ node{
         //def dockerRun =  docker run  -d -p 8080:8080 --name javawebappcontainer dockerhandson/java-web-app-docker
          
          sshagent(['DOCKER_SERVER']) {
-          sh "ssh -o StrictHostKeyChecking=no ubuntu@172.31.7.206 docker rm -f javawebappcontainer || true"
+          sh "sudo ssh -o StrictHostKeyChecking=no ubuntu@172.31.7.206 docker rm -f javawebappcontainer || true"
           //sh "ssh  ubuntu@172.31.7.206 docker rm javawebappcontainer || true"
           //sh 'ssh  ubuntu@172.31.20.72 docker rmi -f  $(docker images -q) || true'
           //sh "ssh -o StrictHostKeyChecking=no ubuntu@172.31.7.206 ${dockerRun}"
-          sh "ssh -o StrictHostKeyChecking=no ubuntu@172.31.7.206 docker run  -d -p 8080:8080 --name javawebappcontainer pritishr00/java-web-app-docker:${buildNumber}"
+          sh "sudo ssh -o StrictHostKeyChecking=no ubuntu@172.31.7.206 docker run  -d -p 8080:8080 --name javawebappcontainer pritishr00/java-web-app-docker:${buildNumber}"
        }
      
     }
