@@ -40,11 +40,9 @@
 
 	<div class="row">
 		<div class="col-md-8">
-<<<<<<< HEAD
+
 			<h2>Welcome To 42Gears Pvt Ltd, AMR Tech Park, Banglore.</h2>
-=======
-			<h2>Welcome To Brillio Technologies Ltd, Sapphire, Banglore.</h2>
->>>>>>> f87a6599196e54364a0d83513ac640dfebcab938
+			
 			<h3>Contact @ +91-8296242028 ,+91-9980923226</h3>
 		</div>	
 	</div>
