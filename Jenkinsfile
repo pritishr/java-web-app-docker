@@ -2,7 +2,7 @@ node{
 
     def buildNumber = BUILD_NUMBER 
     // stage('SCM Checkout'){
-    //     gits url: 'https://github.com/pritishr00/java-web-app-docker.git',branch: 'master'
+    //     git url: 'https://github.com/pritishr00/java-web-app-docker.git',branch: 'master'
     // }
     
     stage(" Maven Clean Package"){
