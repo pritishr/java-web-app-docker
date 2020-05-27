@@ -12,7 +12,6 @@ node{
 
     } 
     
-    
     stage('Build Docker Image'){
         sh "docker build -t pritishr00/java-web-app-docker:${buildNumber} ."
  
